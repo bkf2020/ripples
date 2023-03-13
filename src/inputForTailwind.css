@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-a {
+   @apply underline text-blue-200 hover:text-blue-300 visited:text-purple-200
+}
+
+a {
+   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600 dark:text-blue-200 dark:hover:text-blue-300 dark:visited:text-purple-200;
+}
+
+body {
+   @apply bg-sky-50 dark:bg-zinc-900;
+}
