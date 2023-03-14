@@ -17,13 +17,13 @@ Copyright (C) 2023 bkf2020
 import { useState, useEffect } from 'react'
 
 function App() {
-  const [problemGroups, setProblemGroups] = useState([[]]);
-  const [origProblemGroups, setOrigProblemGroups] = useState([[]]);
+  const [problemGroups, setProblemGroups] = useState<any[]>([]);
+  const [origProblemGroups, setOrigProblemGroups] = useState<any[]>([]);
   const [elementsToUse, setElementsToUse] = useState(10);
   const [active, setActive] = useState("results1.0.json");
   function searchProblemGroups() {
     setElementsToUse(10);
-    let regexStr = document.getElementById("search").value;
+    let regexStr = (document.getElementById("search") as HTMLInputElement).value;
     let empty = false;
     if(regexStr === null || regexStr === "") {
       regexStr = "[\\s\\S]";
@@ -49,7 +49,7 @@ function App() {
     }
     setProblemGroups(newProblemGroups);
   }
-  function getProblemGroups(fileName) {
+  function getProblemGroups(fileName : string) {
     setActive(fileName);
     fetch(fileName)
     .then(response => response.json())
@@ -85,10 +85,14 @@ function App() {
     determineTheme();
   }, []);
   function resetProblemGroups() {
-    document.getElementById("search").value = "";
+    (document.getElementById("search") as HTMLInputElement).value = "";
     searchProblemGroups();
   }
-  function ThresholdButton(props) {
+  interface Threshold {
+    fileName: string;
+    num: string;
+  }
+  function ThresholdButton(props : Threshold) {
     if(active === props.fileName) {
       return <button className="bg-blue-300 hover:bg-blue-100 rounded p-2.5 text-black" onClick={() => getProblemGroups(props.fileName)}>{props.num}</button>;
     } else {
@@ -135,7 +139,7 @@ function App() {
           <tbody className="[&>*:nth-child(even)]:bg-red-100 [&>*:nth-child(even)]:dark:bg-slate-700">
             <tr><th>Similar problems</th></tr>
             {
-              Object.keys(problemGroups).slice(0, elementsToUse).map((key, cnt) => (
+              Object.keys(problemGroups).slice(0, elementsToUse).map((key: any, cnt) => (
                 <tr className="border-2 border-stone-900 dark:border-stone-100"><td className="p-1.5 flex flex-wrap gap-2">
                   {
                     Object.keys(problemGroups[key]).map((i) => {
