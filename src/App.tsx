@@ -116,7 +116,7 @@ function App() {
           An experimental tool using machine learning models (namely <a className="dark-a" href="https://github.com/UKPLab/sentence-transformers" target="_blank" rel="noopener noreferrer">sentence-transformers from UKPLab</a>)
           to try to determine <b>similar problems</b> from the <b>AMC 8/10/12 (American Mathematics Competitions)</b> and 
           <b> AIME (American Invitational Mathematics Examination)</b>.
-          More information on <a className="dark-a" href="https://github.com/bkf2020/ripples" target="_blank" rel="noopener noreferrer">Github</a> and AoPS (ADD LATER).
+          More information on <a className="dark-a" href="https://github.com/bkf2020/ripples" target="_blank" rel="noopener noreferrer">Github</a> and <a className="dark-a" href="https://artofproblemsolving.com/community/c5h3031978" target="_blank" rel="noopener noreferrer">AoPS</a>.
         </p>
         <hr className='mt-3'/>
         <p className="text-white"><img src="https://counter.digits.net/?counter={40e68f8d-97d7-5244-c946-b7506b65b94c}&template=simple" alt="Hit Counter by Digits" className="inline"/> hit according to <a className="dark-a" href="http://www.digits.net/" target="_blank" rel="noopener noreferrer">Digits Web Counter</a></p>

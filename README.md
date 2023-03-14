@@ -1,4 +1,6 @@
 # ripples
+Website: https://bkf2020.github.io/ripples/ | [AoPS Announcement](https://artofproblemsolving.com/community/c5h3031978)
+
 An experimental tool using machine learning models (namely [UKPLabsentence-transformers](https://github.com/UKPLab/sentence-transformers))
 to try to determine **similar problems** from the **AMC 8/10/12 (American Mathematics Competitions)** and
 **AIME (American Invitational Mathematics Examination)**. We use years 2010-2023 (some years are unavailable currently like 2023 AMC10/12).
@@ -27,7 +29,7 @@ Then we run `cluster_problems.py` to cluster the problems into the various group
 We adjust `distance_threshold` in `cluster_problems.py` currently to try to get more accurate results.
 
 # Improvements
-Hopefully we can improve the results in the future together as a community. THat's why this is an open source project.
+Hopefully we can improve the results in the future together as a community. That's why this is an open source project.
 Currently, I'm seeing if we can finetune this model ([UKPLabsentence-transformers](https://github.com/UKPLab/sentence-transformers))
 to be better at seeing similarities in math problems/solutions.
 
