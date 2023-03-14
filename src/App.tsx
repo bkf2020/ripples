@@ -118,6 +118,8 @@ function App() {
           <b> AIME (American Invitational Mathematics Examination)</b>.
           More information on <a className="dark-a" href="https://github.com/bkf2020/ripples" target="_blank" rel="noopener noreferrer">Github</a> and AoPS (ADD LATER).
         </p>
+        <hr className='mt-3'/>
+        <p className="text-white"><img src="https://counter.digits.net/?counter={40e68f8d-97d7-5244-c946-b7506b65b94c}&template=simple" alt="Hit Counter by Digits" className="inline"/> hit according to <a className="dark-a" href="http://www.digits.net/" target="_blank" rel="noopener noreferrer">Digits Web Counter</a></p>
       </article>
       <article className="bg-white dark:bg-stone-900 dark:text-stone-200 shadow-md dark:shadow-stone-400 rounded border-2 border-purple-400 p-2.5 w-11/12 mx-auto max-w-screen-lg my-2.5">
         <p>Select the threshold you want the model to have when classifying problems are similar. Higher numbers means the lower the barrier for problems to be similar.</p>

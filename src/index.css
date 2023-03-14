@@ -578,8 +578,20 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -655,14 +667,6 @@ video {
   border-width: 2px;
 }
 
-.border-r-8 {
-  border-right-width: 8px;
-}
-
-.border-r {
-  border-right-width: 1px;
-}
-
 .border-blue-400 {
   --tw-border-opacity: 1;
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
@@ -728,11 +732,6 @@ video {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
-.bg-sky-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/patrick-connor-klopf-o4ahMT4wHH0-unsplash\.jpg\'\)\] {
   background-image: url('/patrick-connor-klopf-o4ahMT4wHH0-unsplash.jpg');
 }
@@ -790,6 +789,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
 .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -803,11 +807,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -899,11 +898,6 @@ body {
   background-color: rgb(204 251 241 / var(--tw-bg-opacity));
 }
 
-.hover\:text-blue-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
-}
-
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -953,14 +947,14 @@ body {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-zinc-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:text-blue-100 {
   --tw-text-opacity: 1;
   color: rgb(219 234 254 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-stone-200 {
@@ -973,19 +967,9 @@ body {
   color: rgb(214 211 209 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-blue-200 {
-  --tw-text-opacity: 1;
-  color: rgb(191 219 254 / var(--tw-text-opacity));
-}
-
 .dark .dark\:shadow-stone-400 {
   --tw-shadow-color: #a8a29e;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.dark .dark\:hover\:text-blue-100:hover {
-  --tw-text-opacity: 1;
-  color: rgb(219 234 254 / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-blue-300:hover {
